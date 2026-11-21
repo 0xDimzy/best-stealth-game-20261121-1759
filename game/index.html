@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Night Ledger — a stealth game</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #0b0e14; color: #d7dee9;
+    font-family: "Segoe UI", system-ui, -apple-system, sans-serif; overflow: hidden; }
+  #wrap { display: flex; flex-direction: column; align-items: center; justify-content: center;
+    min-height: 100vh; gap: 8px; }
+  canvas { background: #10141d; border: 2px solid #2b3548; border-radius: 6px;
+    box-shadow: 0 8px 40px rgba(0,0,0,.6); max-width: 96vw; }
+  #hint { font-size: 13px; color: #8fa1b8; text-align: center; max-width: 960px; line-height: 1.5; }
+  #hint b { color: #d7dee9; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="960" height="608"></canvas>
+  <div id="hint"><b>WASD / arrows</b> move &nbsp;·&nbsp; <b>Shift</b> sneak (slow, quiet, harder to see) &nbsp;·&nbsp;
+  <b>mouse click</b> throw a pebble &nbsp;·&nbsp; <b>P</b> pause &nbsp;·&nbsp; <b>R</b> restart level &nbsp;·&nbsp; <b>M</b> mute.
+  Steal the ledger, reach the green exit unseen.</div>
+</div>
+<script type="module" src="src/main.js"></script>
+</body>
+</html>
